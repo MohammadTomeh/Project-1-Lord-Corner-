@@ -10,20 +10,20 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
-    background-color: #f8f9fa;
-    color: #333333;
+    background-color: #0a0a0a;
+    color: #e0e0e0;
 }
 
 /* ============================header-section=============================*/
 .header-section {
     width: 100%;
     height: 70px;
-    background-color: rgba(255, 255, 255, 0.98);
-    color: #1a1a1a;
+    background-color: rgba(10, 10, 10, 0.95);
+    color: #fff;
     padding: 0 30px;
     position: fixed;
     z-index: 20;
-    border-bottom: 1px solid rgba(197, 160, 89, 0.3);
+    border-bottom: 1px solid rgba(197, 160, 89, 0.2);
 }
 
 .fa-house {
@@ -35,7 +35,7 @@ body {
 }
 
 .fa-house:hover {
-    color: #1a1a1a;
+    color: #fff;
     transition: 0.5s;
 }
 
@@ -61,8 +61,8 @@ body {
     width: 350px;
     height: 40px;
     border: 1px solid #C5A059;
-    background-color: #ffffff;
-    color: #333;
+    background-color: #1a1a1a;
+    color: #fff;
     padding-left: 40px;
     outline: none;
     font-family: inherit;
@@ -90,9 +90,10 @@ body {
 
 .header-section .nav a {
     text-decoration: none;
-    color: #444;
+    color: #f0f0f0;
     display: block;
     position: relative;
+    transition: 0.3s;
 }
 
 .header-section .nav a:hover {
@@ -101,9 +102,9 @@ body {
 
 .header-section .dropdown-menu {
     position: absolute;
-    background-color: #ffffff;
+    background-color: #1a1a1a;
     list-style: none;
-    color: #333;
+    color: #fff;
     width: 180px;
     border-radius: 10px;
     border: 1px solid #C5A059;
@@ -113,24 +114,25 @@ body {
     text-align: center;
     visibility: hidden;
     z-index: 0;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: 0.4s;
 }
 
 .header-section .nav-list .dropdown-menu a {
     width: 180px;
     height: 40px;
-    color: #444;
+    color: #e0e0e0;
     position: relative;
     z-index: 2;
     font-size: 16px;
     font-weight: 500;
     line-height: 40px;
     text-align: center;
+    transition: 0.3s;
     padding: 0;
 }
 
 .header-section .nav-list .dropdown-menu li:hover a {
-    color: #fff;
+    color: #111;
 }
 
 .header-section .nav-list .Accessories:hover .dropdown-menu {
@@ -169,6 +171,7 @@ body {
     opacity: 0;
     z-index: 2;
     border-radius: 10px;
+    transition: 0.2s;
 }
 
 .header-section .nav-list li .line2:hover::after {
@@ -188,6 +191,7 @@ body {
     opacity:0;
     z-index: 1;
     border-radius: 10px;
+    transition: 0.2s;
 }
 .header-section .nav-list .dropdown-menu li:hover::before {
     width: 180px;
@@ -210,7 +214,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 .hero-section .hero-content {
@@ -219,7 +223,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #111;
+    color: #fff;
     text-align: center;
 }
 
@@ -231,17 +235,16 @@ body {
     font-weight: 900;
     letter-spacing: -2px;
     line-height: 1.1;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
 
 .hero-section .hero-content .hero-text {
     margin-top: 20px;
-    opacity: 1;
+    opacity: 0.9;
     font-size: 22px;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 1px;
     margin-bottom: 40px;
-    color: #333;
+    color: #d1d1d1;
 }
 
 .hero-section .hero-content button {
@@ -265,12 +268,12 @@ body {
 
 .hero-section .btn-primary {
     background-color: #C5A059;
-    color: #fff;
+    color: #111;
     border: 2px solid #C5A059;
 }
 
 .hero-section .btn-secondary {
-    background-color: #fff;
+    background-color: transparent;
     color: #C5A059;
     border: 2px solid #C5A059;
 }
@@ -279,7 +282,7 @@ body {
 .features-section {
     width: 100%;
     height: 100vh;
-    background-color: #ffffff;
+    background-color: #0f0f0f;
     position: relative;
 }
 
@@ -296,7 +299,7 @@ body {
     font-size: 52px;
     font-weight: 800;
     letter-spacing: -1px;
-    color: #111;
+    color: #fff;
 }
 
 .features-section .section-header .section-line {
@@ -324,13 +327,12 @@ body {
     height: 100%;
     text-align: center;
     padding: 30px 20px;
-    border: 1px solid rgba(197, 160, 89, 0.2);
-    background-color: #fcfcfc;
+    border: 1px solid rgba(197, 160, 89, 0.3);
+    background-color: #161616;
     border-radius: 20px;
     position: relative;
     transition: 0.5s;
     z-index: 1;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
 }
 
 .features-section .container .feature-card-center {
@@ -347,7 +349,7 @@ body {
     font-size: 28px;
     font-weight: 700;
     padding-top: 20px;
-    color: #111;
+    color: #fff;
     transition: 0.5s;
 }
 
@@ -355,9 +357,9 @@ body {
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
-    opacity: 0.9;
+    opacity: 0.7;
     padding-top: 20px;
-    color: #555;
+    color: #b0b0b0;
     transition: 0.5s;
 }
 
@@ -378,11 +380,11 @@ body {
 .features-section .container .feature-card:hover .feature-title,
 .features-section .container .feature-card:hover .feature-icon,
 .features-section .container .feature-card:hover .feature-link {
-    color: #fff;
+    color: #111;
 }
 
 .features-section .container .feature-card:hover .feature-text {
-    color: #fff;
+    color: #222;
     opacity: 1;
 }
 
@@ -411,7 +413,7 @@ body {
 }
 /* ============================products-section=============================*/
 .products-section {
-    background-color: #f8f9fa;
+    background-color: #0a0a0a;
     width: 100%;
     height: 100vh;
     position: relative;
@@ -424,7 +426,7 @@ body {
     transform: translateX(-50%);
     font-size: 40px;
     font-weight: 800;
-    color: #111;
+    color: #fff;
     text-align: center;
 }
 
@@ -452,7 +454,7 @@ body {
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
-    border: 1px solid #eee;
+    border: 1px solid #222;
 }
 
 .products-section .container .product-card {
@@ -515,7 +517,7 @@ body {
 }
 
 .products-section .container .product-card .product-actions i {
-    color: #fff;
+    color: #111;
     width: 100%;
     font-size: 24px;
     line-height: 40px;
@@ -533,7 +535,7 @@ body {
 
 .products-section .container .product-card:hover .product-overlay {
     border-radius: 20px;
-    background-color: rgba(17, 17, 17, 0.9);
+    background-color: rgba(0, 0, 0, 0.85);
     visibility: visible;
     opacity: 1;
 }
@@ -542,7 +544,7 @@ body {
 .offer-section {
     width: 100%;
     height: 100vh;
-    background-color: #ffffff;
+    background-color: #0f0f0f;
     position: relative;
 }
 
@@ -551,7 +553,7 @@ body {
     height: 80px;
     font-size: 40px;
     font-weight: 800;
-    color: #111; 
+    color: #fff;
     position: absolute;
     top: 50px;
     left: 50%;
@@ -586,10 +588,9 @@ body {
     margin: 4% 0;
     position: relative;
     z-index: 1;
-    border: 1px solid rgba(197, 160, 89, 0.3);
-    background-color: #f9f9f9;
+    border: 1px solid rgba(197, 160, 89, 0.4);
+    background-color: #1a1a1a;
     transition: 0.5s;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
 }
 
 .offer-section .offer-card-center {
@@ -600,7 +601,7 @@ body {
     width: 100%;
     height: 100%;
     position: absolute;
-    color: #333; 
+    color: #fff;
 }
 
 .offer-section .offer-card i {
@@ -608,11 +609,11 @@ body {
     padding-left: 20px;
     padding-top: 30px;
     color: #C5A059;
-    opacity: 1;
+    opacity: 0.8;
 }
 
 .offer-section .offer-card .offer-text {
-    color: #333; 
+    color: #f5f5f5;
     padding-left: 10px;
     width: 70%;
     position: absolute;
@@ -624,15 +625,15 @@ body {
 .offer-section .offer-card .offer-title {
     font-size: 28px;
     font-weight: 700;
-    color: #111; 
+    color: #fff;
 }
 
 .offer-section .offer-card .offer-description {
     padding-top: 10px;
     font-size: 15px;
     line-height: 1.5;
-    opacity: 0.9;
-    color: #555; 
+    opacity: 0.7;
+    color: #d1d1d1;
 }
 
 .offer-section .container .offer-card::after {
@@ -657,12 +658,12 @@ body {
 
 .offer-section .offer-card:hover .offer-title,
 .offer-section .offer-card:hover i {
-    color: #fff; 
+    color: #111;
     opacity: 1;
 }
 
 .offer-section .offer-card:hover .offer-description {
-    color: #fff;
+    color: #222;
     opacity: 1;
 }
 
@@ -677,8 +678,8 @@ body {
 .about-section {
     width: 100%;
     height: 100vh;
-    background-color: #f8f9fa;
-    color: #111;
+    background-color: #0a0a0a;
+    color: #fff;
 }
 
 .about-section .container {
@@ -701,7 +702,7 @@ body {
     height: 15%;
     font-size: 40px;
     font-weight: 800;
-    color: #111;
+    color: #fff;
 }
 
 .about-section .section-header .section-line {
@@ -721,8 +722,8 @@ body {
     font-size: 18px;
     line-height: 1.7;
     font-weight: 400;
-    opacity: 1;
-    color: #444;
+    opacity: 0.8;
+    color: #d1d1d1;
 }
 
 .about-section .about-list {
@@ -733,7 +734,7 @@ body {
     font-size: 17px;
     font-weight: 500;
     padding-top: 25px;
-    color: #333;
+    color: #b0b0b0;
     list-style: none;
 }
 
@@ -813,14 +814,14 @@ body {
 .stats-overlay {
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     position: absolute;
     top: 0;
     left: 0;
 }
 
 .stats-section .stats-container {
-    color: #111;
+    color: #fff;
     width: 70%;
     height: 30%;
     position: absolute;
@@ -848,7 +849,7 @@ body {
     font-size: 42px;
     font-weight: 800;
     letter-spacing: -1px;
-    color: #111;
+    color: #fff;
 }
 
 .stats-section .stats-container .stat-box .stat-text {
@@ -864,7 +865,7 @@ body {
 .pricing-section {
     width: 100%;
     height: 100vh;
-    background-color: #ffffff;
+    background-color: #0f0f0f;
     position: relative;
 }
 
@@ -873,7 +874,7 @@ body {
     height: 80px;
     font-size: 40px;
     font-weight: 800;
-    color: #111;
+    color: #fff;
     position: absolute;
     top: 50px;
     left: 50%;
@@ -904,15 +905,14 @@ body {
     height: 100%;
     float: left;
     border-radius: 20px;
-    border: 1px solid rgba(197, 160, 89, 0.4);
-    background-color: #fcfcfc;
-    color: #333;
+    border: 1px solid rgba(197, 160, 89, 0.5);
+    background-color: #1a1a1a;
+    color: #fff;
     text-align: center;
     padding-top: 3%;
     position: relative;
     transition: 0.4s;
     z-index: 1;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
 .pricing-section .container .pricing-card-center {
@@ -943,7 +943,7 @@ body {
 .pricing-section .container .pricing-card .pricing-circle .price {
     font-size: 48px;
     font-weight: 800;
-    color: #111;
+    color: #fff;
     transition: 0.4s;
 }
 
@@ -960,7 +960,7 @@ body {
     padding-top: 30px;
     font-size: 18px;
     font-weight: 400;
-    color: #555;
+    color: #d1d1d1;
     transition: 0.4s;
 }
 
@@ -1009,13 +1009,12 @@ body {
 .pricing-section .container .pricing-card:hover .pricing-circle .price,
 .pricing-section .container .pricing-card:hover .pricing-circle .pricing-type,
 .pricing-section .container .pricing-card:hover .pricing-btn {
-    color: #fff;
-    border-color: #fff;
+    color: #111;
+    border-color: #111;
 }
 .pricing-section .container .pricing-card .pricing-btn:hover {
-    background-color: #fff;
+    background-color: #111;
     color: #C5A059;
-    border-color: #fff;
 }
 
 /* ============================team-section=============================*/
@@ -1031,7 +1030,7 @@ body {
 .team-overlay {
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
     top: 0;
     left: 0;
@@ -1051,7 +1050,7 @@ body {
     width: 45%;
     height: 100%;
     float: left;
-    color: #111;
+    color: #fff;
     position: relative;
 }
 
@@ -1085,11 +1084,11 @@ body {
     font-weight: 500;
     padding-left: 150px;
     padding-top: 5px;
-    color: #333;
+    color: #fff;
 }
 
 .team-section .container .team-description {
-    color: #555;
+    color: #a0a0a0;
     font-size: 15px;
     line-height: 1.6;
     padding-top: 30px;
@@ -1099,7 +1098,7 @@ body {
 .team-cards-section {
     width: 100%;
     height: 100vh;
-    background-color: #f8f9fa;
+    background-color: #0a0a0a;
     position: relative;
 }
 
@@ -1108,7 +1107,7 @@ body {
     height: 80px;
     font-size: 40px;
     font-weight: 800;
-    color: #111;
+    color: #fff;
     position: absolute;
     top: 15%;
     left: 50%;
@@ -1139,12 +1138,11 @@ body {
     width: 30%;
     height: 100%;
     float: left;
-    background-color: #ffffff;
+    background-color: #161616;
     border: 1px solid rgba(197, 160, 89, 0.2);
     border-radius: 10px;
     position: relative;
     z-index: 1;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
 .team-cards-section .container .team-card-center {
@@ -1160,7 +1158,7 @@ body {
     top: 5%;
     transform: translateX(-50%);
     border-radius: 10px;
-    border: 1px solid #eee;
+    border: 1px solid #333;
 }
 
 .team-cards-section .container .team-card img {
@@ -1192,7 +1190,7 @@ body {
     display: block;
     width: 50px;
     height: 50px;
-    background-color: #ffffff;
+    background-color: #111;
     color: #C5A059;
     font-size: 25px;
     line-height: 50px;
@@ -1209,9 +1207,9 @@ body {
 }
 
 .team-cards-section .container .team-overlay i:hover{
-    color: #fff;
-    background-color: #111;
-    border-color: #111;
+    color: #111;
+    background-color: #fff;
+    border-color: #fff;
 }
 
 .team-cards-section .container .team-info {
@@ -1228,7 +1226,7 @@ body {
 .team-cards-section .container .team-info .team-name {
     font-size: 24px;
     font-weight: 700;
-    color: #111; 
+    color: #fff;
     transition: 0.5s;
 }
 
@@ -1244,7 +1242,7 @@ body {
 
 .team-cards-section .container .team-card:hover .team-info .team-name,
 .team-cards-section .container .team-card:hover .team-info .team-role {
-    color: #fff;
+    color: #111;
 }
 
 .team-cards-section .container .team-card::after {
@@ -1263,14 +1261,14 @@ body {
 
 .team-cards-section .container .team-card:hover::after {
     height: 100%;
-    opacity: 1; 
+    opacity: 0.4;
 }
 
 /* ============================blog-section=============================*/
 .blog-section {
     width: 100%;
     height: 100vh;
-    background-color: #ffffff;
+    background-color: #0f0f0f;
     position: relative;
 }
 
@@ -1279,7 +1277,7 @@ body {
     height: 80px;
     font-size: 40px;
     font-weight: 800;
-    color: #111; 
+    color: #fff;
     position: absolute;
     top: 2%;
     left: 50%;
@@ -1310,13 +1308,12 @@ body {
     width: 30%;
     height: 100%;
     float: left;
-    background-color: #fcfcfc;
-    border: 1px solid rgba(197, 160, 89, 0.2);
+    background-color: #1a1a1a;
+    border: 1px solid rgba(197, 160, 89, 0.3);
     border-radius: 20px;
     position: relative;
     z-index: 1;
     transition: 0.5s;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.02);
 }
 
 .blog-section .container .blog-card-center {
@@ -1332,7 +1329,7 @@ body {
     top: 5%;
     transform: translateX(-50%);
     border-radius: 20px;
-    border: 1px solid #eee; 
+    border: 1px solid #333;
 }
 
 .blog-section .container .blog-image img {
@@ -1374,16 +1371,16 @@ body {
     font-size: 22px;
     font-weight: 700;
     padding-top: 5%;
-    color: #111;
+    color: #fff;
     transition: 0.5s;
 }
 
 .blog-section .container .blog-description {
     padding-top: 10%;
-    opacity: 0.9;
+    opacity: 0.8;
     font-size: 15px;
     line-height: 1.6;
-    color: #555;
+    color: #d1d1d1;
     transition: 0.5s;
 }
 
@@ -1401,7 +1398,7 @@ body {
 }
 
 .blog-section .container .blog-link:hover {
-    color: #111;
+    color: #fff;
 }
 
 .blog-section .container .blog-card::after {
@@ -1427,14 +1424,14 @@ body {
 .blog-section .container .blog-card:hover .blog-description,
 .blog-section .container .blog-card:hover .blog-meta,
 .blog-section .container .blog-card:hover .blog-link {
-    color: #fff;
+    color: #111;
 }
 
 /* ============================footer-section=============================*/
 .footer-section {
     width: 100%;
     padding: 60px 0;
-    background-color: #ffffff;
+    background-color: #050505;
     text-align: center;
     position: relative;
     border-top: 1px solid rgba(197, 160, 89, 0.3);
@@ -1447,11 +1444,6 @@ body {
     margin: 0 auto 30px;
     border-radius: 15px;
     border: 1px solid #C5A059;
-    transition: 0.5s;
-}
-.footer-section .footer-logo:hover{
-    transform: translateY(-4%);
-    transition: 0.5s;
 }
 .footer-section .footer-logo img { width: 100%; height: 100%; object-fit: cover; }
 
@@ -1466,14 +1458,13 @@ body {
 .footer-section .footer-social li {
     width: 60px;
     height: 60px;
-    background-color: #f8f9fa;
+    background-color: #1a1a1a;
     border: 1px solid #C5A059;
     border-radius: 50%;
     line-height: 55px;
     margin: 0 10px;
     font-size: 24px;
     transition: 0.4s;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
 }
 
 .footer-section .footer-social a {
@@ -1485,11 +1476,11 @@ body {
 .footer-section .footer-social li:hover {
     background-color: #C5A059;
     transform: translateY(-5px);
-    color: #ffffff;
+    color: #1a1a1a;
 }
 
 .footer-section .footer-social li:hover a {
-    color: #ffffff;
+    color: #1a1a1a;
 }
 
 .footer-section .footer-text {
@@ -1499,5 +1490,5 @@ body {
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
-    opacity: 1;
+    opacity: 0.8;
 }
