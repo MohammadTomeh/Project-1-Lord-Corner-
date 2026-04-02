@@ -10,20 +10,20 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
-    background-color: #0a0a0a;
-    color: #e0e0e0;
+    background-color: #f8f9fa; /* Lightened main background for a mixed feel */
+    color: #1a1a1a; /* High contrast text */
 }
 
 /* ============================header-section=============================*/
 .header-section {
     width: 100%;
     height: 70px;
-    background-color: rgba(10, 10, 10, 0.95);
+    background-color: rgba(26, 26, 26, 0.98); /* Luxury dark header */
     color: #fff;
     padding: 0 30px;
     position: fixed;
     z-index: 20;
-    border-bottom: 1px solid rgba(197, 160, 89, 0.2);
+    border-bottom: 2px solid #C5A059; /* Definitive gold accent */
 }
 
 .fa-house {
@@ -60,8 +60,8 @@ body {
     border-radius: 20px;
     width: 350px;
     height: 40px;
-    border: 1px solid #C5A059;
-    background-color: #1a1a1a;
+    border: 1px solid rgba(197, 160, 89, 0.5);
+    background-color: #2a2a2a;
     color: #fff;
     padding-left: 40px;
     outline: none;
@@ -90,7 +90,7 @@ body {
 
 .header-section .nav a {
     text-decoration: none;
-    color: #f0f0f0;
+    color: #e0e0e0;
     display: block;
     position: relative;
     transition: 0.3s;
@@ -132,7 +132,7 @@ body {
 }
 
 .header-section .nav-list .dropdown-menu li:hover a {
-    color: #111;
+    color: #111; /* Visible text against gold background on hover */
 }
 
 .header-section .nav-list .Accessories:hover .dropdown-menu {
@@ -167,7 +167,7 @@ body {
     height: 3px;
     bottom: 0px;
     left: 0;
-    background-color: #edaa00;
+    background-color: #111; /* Darker accent for contrast inside gold hover */
     opacity: 0;
     z-index: 2;
     border-radius: 10px;
@@ -214,7 +214,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(10, 10, 10, 0.7); /* Depth for the hero image */
 }
 
 .hero-section .hero-content {
@@ -230,7 +230,7 @@ body {
 .hero-section .hero-content .hero-title {
     font-size: 90px;
     text-transform: uppercase;
-    color: #C5A059;
+    color: #fff; /* White title for high luxury impact */
     font-family: 'Inter', sans-serif;
     font-weight: 900;
     letter-spacing: -2px;
@@ -239,12 +239,12 @@ body {
 
 .hero-section .hero-content .hero-text {
     margin-top: 20px;
-    opacity: 0.9;
+    opacity: 1;
     font-size: 22px;
     font-weight: 300;
     letter-spacing: 1px;
     margin-bottom: 40px;
-    color: #d1d1d1;
+    color: #f0f0f0;
 }
 
 .hero-section .hero-content button {
@@ -262,8 +262,8 @@ body {
 }
 
 .hero-section .hero-content button:hover {
-    opacity: 0.9;
-    transform: translateY(-2%);
+    opacity: 1;
+    transform: translateY(-5px);
 }
 
 .hero-section .btn-primary {
@@ -274,15 +274,20 @@ body {
 
 .hero-section .btn-secondary {
     background-color: transparent;
-    color: #C5A059;
-    border: 2px solid #C5A059;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.hero-section .btn-secondary:hover {
+    background-color: #fff;
+    color: #111;
 }
 
 /* ============================features-section=============================*/
 .features-section {
     width: 100%;
     height: 100vh;
-    background-color: #0f0f0f;
+    background-color: #ffffff; /* Clean light section */
     position: relative;
 }
 
@@ -299,7 +304,7 @@ body {
     font-size: 52px;
     font-weight: 800;
     letter-spacing: -1px;
-    color: #fff;
+    color: #1a1a1a;
 }
 
 .features-section .section-header .section-line {
@@ -327,8 +332,8 @@ body {
     height: 100%;
     text-align: center;
     padding: 30px 20px;
-    border: 1px solid rgba(197, 160, 89, 0.3);
-    background-color: #161616;
+    border: 1px solid #e0e0e0;
+    background-color: #fdfdfd;
     border-radius: 20px;
     position: relative;
     transition: 0.5s;
@@ -349,7 +354,7 @@ body {
     font-size: 28px;
     font-weight: 700;
     padding-top: 20px;
-    color: #fff;
+    color: #1a1a1a;
     transition: 0.5s;
 }
 
@@ -357,9 +362,9 @@ body {
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
-    opacity: 0.7;
+    opacity: 0.8;
     padding-top: 20px;
-    color: #b0b0b0;
+    color: #444;
     transition: 0.5s;
 }
 
@@ -380,11 +385,11 @@ body {
 .features-section .container .feature-card:hover .feature-title,
 .features-section .container .feature-card:hover .feature-icon,
 .features-section .container .feature-card:hover .feature-link {
-    color: #111;
+    color: #fff;
 }
 
 .features-section .container .feature-card:hover .feature-text {
-    color: #222;
+    color: #eee;
     opacity: 1;
 }
 
@@ -395,7 +400,7 @@ body {
     width: 0;
     top: 0;
     left: 0;
-    background-color: #C5A059;
+    background-color: #1a1a1a; /* Modern dark hover effect */
     border-radius: 20px;
     opacity: 0;
     z-index: -1;
@@ -408,12 +413,12 @@ body {
     opacity: 1;
 }
 .features-section .container .feature-card:hover{
-    transform: translateY(-10px);
+    transform: translateY(-15px);
     border-color: #C5A059;
 }
 /* ============================products-section=============================*/
 .products-section {
-    background-color: #0a0a0a;
+    background-color: #111; /* Balanced dark section */
     width: 100%;
     height: 100vh;
     position: relative;
@@ -454,7 +459,7 @@ body {
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
-    border: 1px solid #222;
+    border: 1px solid #333;
 }
 
 .products-section .container .product-card {
@@ -535,7 +540,7 @@ body {
 
 .products-section .container .product-card:hover .product-overlay {
     border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(17, 17, 17, 0.9);
     visibility: visible;
     opacity: 1;
 }
@@ -544,7 +549,7 @@ body {
 .offer-section {
     width: 100%;
     height: 100vh;
-    background-color: #0f0f0f;
+    background-color: #f4f4f4; /* Contrast section */
     position: relative;
 }
 
@@ -553,7 +558,7 @@ body {
     height: 80px;
     font-size: 40px;
     font-weight: 800;
-    color: #fff;
+    color: #1a1a1a;
     position: absolute;
     top: 50px;
     left: 50%;
@@ -588,8 +593,8 @@ body {
     margin: 4% 0;
     position: relative;
     z-index: 1;
-    border: 1px solid rgba(197, 160, 89, 0.4);
-    background-color: #1a1a1a;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
     transition: 0.5s;
 }
 
@@ -601,7 +606,7 @@ body {
     width: 100%;
     height: 100%;
     position: absolute;
-    color: #fff;
+    color: #111;
 }
 
 .offer-section .offer-card i {
@@ -609,11 +614,11 @@ body {
     padding-left: 20px;
     padding-top: 30px;
     color: #C5A059;
-    opacity: 0.8;
+    opacity: 1;
 }
 
 .offer-section .offer-card .offer-text {
-    color: #f5f5f5;
+    color: #1a1a1a;
     padding-left: 10px;
     width: 70%;
     position: absolute;
@@ -625,15 +630,15 @@ body {
 .offer-section .offer-card .offer-title {
     font-size: 28px;
     font-weight: 700;
-    color: #fff;
+    color: #1a1a1a;
 }
 
 .offer-section .offer-card .offer-description {
     padding-top: 10px;
     font-size: 15px;
     line-height: 1.5;
-    opacity: 0.7;
-    color: #d1d1d1;
+    opacity: 0.8;
+    color: #555;
 }
 
 .offer-section .container .offer-card::after {
@@ -678,8 +683,8 @@ body {
 .about-section {
     width: 100%;
     height: 100vh;
-    background-color: #0a0a0a;
-    color: #fff;
+    background-color: #ffffff;
+    color: #1a1a1a;
 }
 
 .about-section .container {
@@ -702,7 +707,7 @@ body {
     height: 15%;
     font-size: 40px;
     font-weight: 800;
-    color: #fff;
+    color: #111;
 }
 
 .about-section .section-header .section-line {
@@ -722,8 +727,8 @@ body {
     font-size: 18px;
     line-height: 1.7;
     font-weight: 400;
-    opacity: 0.8;
-    color: #d1d1d1;
+    opacity: 1;
+    color: #333;
 }
 
 .about-section .about-list {
@@ -734,7 +739,7 @@ body {
     font-size: 17px;
     font-weight: 500;
     padding-top: 25px;
-    color: #b0b0b0;
+    color: #1a1a1a;
     list-style: none;
 }
 
@@ -760,7 +765,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     border-radius: 20px;
-    border: 2px solid #C5A059;
+    border: 3px solid #1a1a1a;
 }
 
 .about-section .about-image .image img {
@@ -796,7 +801,8 @@ body {
 }
 
 .about-section .about-image .dot:hover {
-    background-color: #C5A059;
+    background-color: #1a1a1a;
+    border-color: #1a1a1a;
 }
 
 /* ============================stats-section=============================*/
@@ -814,7 +820,7 @@ body {
 .stats-overlay {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(10, 10, 10, 0.85); /* Rich dark overlay */
     position: absolute;
     top: 0;
     left: 0;
@@ -865,7 +871,7 @@ body {
 .pricing-section {
     width: 100%;
     height: 100vh;
-    background-color: #0f0f0f;
+    background-color: #ffffff;
     position: relative;
 }
 
@@ -874,7 +880,7 @@ body {
     height: 80px;
     font-size: 40px;
     font-weight: 800;
-    color: #fff;
+    color: #111;
     position: absolute;
     top: 50px;
     left: 50%;
@@ -905,9 +911,9 @@ body {
     height: 100%;
     float: left;
     border-radius: 20px;
-    border: 1px solid rgba(197, 160, 89, 0.5);
-    background-color: #1a1a1a;
-    color: #fff;
+    border: 1px solid #eee;
+    background-color: #fff;
+    color: #1a1a1a;
     text-align: center;
     padding-top: 3%;
     position: relative;
@@ -918,6 +924,8 @@ body {
 .pricing-section .container .pricing-card-center {
     margin: 0 5%;
     border: 2px solid #C5A059;
+    height: 105%;
+    margin-top: -15px;
 }
 
 .pricing-section .container .pricing-card .pricing-title {
@@ -933,7 +941,7 @@ body {
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    border: 2px solid #C5A059;
+    border: 2px solid #1a1a1a;
     position: relative;
     margin: 20px auto 0;
     transition: 0.4s;
@@ -943,7 +951,7 @@ body {
 .pricing-section .container .pricing-card .pricing-circle .price {
     font-size: 48px;
     font-weight: 800;
-    color: #fff;
+    color: #1a1a1a;
     transition: 0.4s;
 }
 
@@ -960,7 +968,7 @@ body {
     padding-top: 30px;
     font-size: 18px;
     font-weight: 400;
-    color: #d1d1d1;
+    color: #555;
     transition: 0.4s;
 }
 
@@ -973,9 +981,9 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
     border-radius: 20px;
-    border: 1px solid #C5A059;
+    border: 2px solid #1a1a1a;
     background-color: transparent;
-    color: #C5A059;
+    color: #1a1a1a;
     font-family: inherit;
     cursor: pointer;
     transition: 0.3s;
@@ -990,7 +998,7 @@ body {
     height: 0;
     top: 0;
     left: 0;
-    background-color: #C5A059;
+    background-color: #1a1a1a;
     opacity: 0;
     z-index: -1;
     border-radius: 20px;
@@ -1009,12 +1017,13 @@ body {
 .pricing-section .container .pricing-card:hover .pricing-circle .price,
 .pricing-section .container .pricing-card:hover .pricing-circle .pricing-type,
 .pricing-section .container .pricing-card:hover .pricing-btn {
-    color: #111;
-    border-color: #111;
+    color: #fff;
+    border-color: #C5A059;
 }
 .pricing-section .container .pricing-card .pricing-btn:hover {
-    background-color: #111;
-    color: #C5A059;
+    background-color: #C5A059;
+    color: #111;
+    border-color: #C5A059;
 }
 
 /* ============================team-section=============================*/
@@ -1030,7 +1039,7 @@ body {
 .team-overlay {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(10, 10, 10, 0.8);
     position: absolute;
     top: 0;
     left: 0;
@@ -1088,7 +1097,7 @@ body {
 }
 
 .team-section .container .team-description {
-    color: #a0a0a0;
+    color: #d0d0d0;
     font-size: 15px;
     line-height: 1.6;
     padding-top: 30px;
@@ -1098,7 +1107,7 @@ body {
 .team-cards-section {
     width: 100%;
     height: 100vh;
-    background-color: #0a0a0a;
+    background-color: #fdfdfd;
     position: relative;
 }
 
@@ -1107,7 +1116,7 @@ body {
     height: 80px;
     font-size: 40px;
     font-weight: 800;
-    color: #fff;
+    color: #111;
     position: absolute;
     top: 15%;
     left: 50%;
@@ -1138,8 +1147,8 @@ body {
     width: 30%;
     height: 100%;
     float: left;
-    background-color: #161616;
-    border: 1px solid rgba(197, 160, 89, 0.2);
+    background-color: #fff;
+    border: 1px solid #eee;
     border-radius: 10px;
     position: relative;
     z-index: 1;
@@ -1158,7 +1167,7 @@ body {
     top: 5%;
     transform: translateX(-50%);
     border-radius: 10px;
-    border: 1px solid #333;
+    border: 1px solid #ddd;
 }
 
 .team-cards-section .container .team-card img {
@@ -1173,7 +1182,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(197, 160, 89, 0.8);
+    background-color: rgba(26, 26, 26, 0.8);
     opacity: 0;
     z-index: 0;
     transition: 0.5s;
@@ -1183,7 +1192,7 @@ body {
 
 .team-cards-section .container .team-card:hover .team-overlay {
     opacity: 1;
-    background-color: rgba(197, 160, 89, 0.5);
+    background-color: rgba(197, 160, 89, 0.6);
 }
 
 .team-cards-section .container .team-overlay i {
@@ -1226,7 +1235,7 @@ body {
 .team-cards-section .container .team-info .team-name {
     font-size: 24px;
     font-weight: 700;
-    color: #fff;
+    color: #111;
     transition: 0.5s;
 }
 
@@ -1242,7 +1251,7 @@ body {
 
 .team-cards-section .container .team-card:hover .team-info .team-name,
 .team-cards-section .container .team-card:hover .team-info .team-role {
-    color: #111;
+    color: #fff;
 }
 
 .team-cards-section .container .team-card::after {
@@ -1255,20 +1264,20 @@ body {
     transition: 0.5s;
     opacity: 0;
     border-radius: 10px;
-    background-color: #C5A059;
+    background-color: #1a1a1a;
     z-index: -1;
 }
 
 .team-cards-section .container .team-card:hover::after {
     height: 100%;
-    opacity: 0.4;
+    opacity: 1;
 }
 
 /* ============================blog-section=============================*/
 .blog-section {
     width: 100%;
     height: 100vh;
-    background-color: #0f0f0f;
+    background-color: #111;
     position: relative;
 }
 
@@ -1309,7 +1318,7 @@ body {
     height: 100%;
     float: left;
     background-color: #1a1a1a;
-    border: 1px solid rgba(197, 160, 89, 0.3);
+    border: 1px solid #333;
     border-radius: 20px;
     position: relative;
     z-index: 1;
@@ -1329,7 +1338,7 @@ body {
     top: 5%;
     transform: translateX(-50%);
     border-radius: 20px;
-    border: 1px solid #333;
+    border: 1px solid #444;
 }
 
 .blog-section .container .blog-image img {
@@ -1377,10 +1386,10 @@ body {
 
 .blog-section .container .blog-description {
     padding-top: 10%;
-    opacity: 0.8;
+    opacity: 0.9;
     font-size: 15px;
     line-height: 1.6;
-    color: #d1d1d1;
+    color: #ccc;
     transition: 0.5s;
 }
 
@@ -1431,10 +1440,10 @@ body {
 .footer-section {
     width: 100%;
     padding: 60px 0;
-    background-color: #050505;
+    background-color: #0a0a0a;
     text-align: center;
     position: relative;
-    border-top: 1px solid rgba(197, 160, 89, 0.3);
+    border-top: 3px solid #C5A059;
 }
 
 .footer-section .footer-logo {
@@ -1443,8 +1452,14 @@ body {
     overflow: hidden;
     margin: 0 auto 30px;
     border-radius: 15px;
-    border: 1px solid #C5A059;
+    border: 2px solid #C5A059;
 }
+
+.footer-section .footer-logo:hover{
+    transform: translateY(-4%);
+    transition: 0.5s;
+}
+
 .footer-section .footer-logo img { width: 100%; height: 100%; object-fit: cover; }
 
 .footer-section .footer-social {
@@ -1475,12 +1490,12 @@ body {
 
 .footer-section .footer-social li:hover {
     background-color: #C5A059;
-    transform: translateY(-5px);
-    color: #1a1a1a;
+    transform: translateY(-8px);
+    color: #111;
 }
 
 .footer-section .footer-social li:hover a {
-    color: #1a1a1a;
+    color: #111;
 }
 
 .footer-section .footer-text {
@@ -1490,5 +1505,5 @@ body {
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
-    opacity: 0.8;
+    opacity: 1;
 }
