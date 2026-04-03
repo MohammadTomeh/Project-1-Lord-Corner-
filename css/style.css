@@ -295,12 +295,12 @@ body {
 }
 
 .hero-section .btn-secondary {
-    background-color: transparent;
+    /* background-color: transparent;
     color: #fff;
-    border: 2px solid #fff;
-    /* background: transparent;
+    border: 2px solid #fff; */
+    background: transparent;
     border: 1px solid #C5A059;
-    color: #C5A059; */
+    color: #C5A059;
 }
 
 .hero-section .btn-secondary:hover {
