@@ -122,7 +122,7 @@ body {
 }
 
 .header-section .nav-list .dropdown-menu a {
-    width: 180px;
+    width: auto;
     height: 40px;
     color: #e0e0e0;
     position: relative;
@@ -132,6 +132,13 @@ body {
     line-height: 40px;
     text-align: center;
     padding: 0;
+    display: inline-block;
+}
+
+.header-section .nav-list .dropdown-menu li {
+    width: 100%;
+    display: block;
+    position: relative;
 }
 
 .header-section .nav-list .dropdown-menu li:hover a {
@@ -168,8 +175,9 @@ body {
     position: absolute;
     width: 0;
     height: 3px;
-    bottom: 0px;
-    left: 0;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: #111;
     opacity: 0;
     z-index: 2;
@@ -191,6 +199,8 @@ body {
     height: 100%;
     left: 0;
     top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: #C5A059;
     opacity: 0;
     z-index: 1;
@@ -199,7 +209,7 @@ body {
 }
 
 .header-section .nav-list .dropdown-menu li:hover::before {
-    width: 180px;
+    width: 100%;
     height: 100%;
     transition: 0.5s;
     opacity: 1;
@@ -1045,7 +1055,10 @@ body {
     opacity: 1;
     z-index: -1;
 }
-
+.pricing-section .container .pricing-card:hover{
+    transform: translateY(-4%);
+    transition: 0.4s;
+}
 .pricing-section .container .pricing-card:hover .pricing-title,
 .pricing-section .container .pricing-card:hover .pricing-feature,
 .pricing-section .container .pricing-card:hover .pricing-circle,
@@ -1192,6 +1205,7 @@ body {
     border-radius: 10px;
     position: relative;
     z-index: 1;
+    transition: 0.4s;
 }
 
 .team-cards-section .container .team-card-center {
@@ -1222,7 +1236,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(26, 26, 26, 0.8);
+    background-color: rgba(26, 26, 26, 0.6);
     opacity: 0;
     z-index: 0;
     transition: 0.5s;
@@ -1232,7 +1246,7 @@ body {
 
 .team-cards-section .container .team-card:hover .team-overlay {
     opacity: 1;
-    background-color: rgba(197, 160, 89, 0.6);
+    background-color: rgba(197, 160, 89, 0.4);
 }
 
 .team-cards-section .container .team-overlay i {
@@ -1312,7 +1326,10 @@ body {
     height: 100%;
     opacity: 1;
 }
-
+.team-cards-section .container .team-card:hover{
+    transform: translateY(-4%);
+    transition: 0.5s;
+}
 /* ============================blog-section=============================*/
 .blog-section {
     width: 100%;
@@ -1345,7 +1362,7 @@ body {
 
 .blog-section .container {
     width: 80%;
-    height: 80%;
+    height: 70%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1474,7 +1491,11 @@ body {
 .blog-section .container .blog-card:hover .blog-link {
     color: #111;
 }
-
+.blog-section .container .blog-card:hover{
+    height: 110%;
+    transition: 0.4s;
+    margin-top: -2%;
+}
 /* ============================footer-section=============================*/
 .footer-section {
     width: 100%;
