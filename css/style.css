@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 /* ======================================================================*/
 body {
     height: 4000px;
@@ -12,7 +11,6 @@ body {
     background-color: #f8f9fa;
     color: #1a1a1a;
 }
-
 /* ============================header-section=============================*/
 .header-section {
     width: 100%;
@@ -25,7 +23,7 @@ body {
     border-bottom: 2px solid #C5A059;
 }
 
-.fa-house {
+.logo {
     float: left;
     font-size: 35px;
     line-height: 70px;
@@ -41,7 +39,7 @@ body {
     top: 10px;
 }
 
-.fa-house:hover {
+.logo:hover {
     color: #fff;
     transition: 0.5s;
 }
@@ -125,7 +123,6 @@ body {
     transform: translateX(-50%);
     text-align: center;
     visibility: hidden;
-    z-index: 0;
 }
 
 .header-section .nav-list .dropdown-menu a {
@@ -152,7 +149,7 @@ body {
     color: #111;
 }
 
-.header-section .nav-list .Accessories:hover .dropdown-menu {
+.header-section .nav-list .Collection:hover .dropdown-menu {
     transition: 0.5s;
     visibility: visible;
 }
@@ -231,6 +228,8 @@ body {
     background-size: cover;
     background-position: center;
     position: relative;
+    background-attachment: fixed;
+
 }
 
 .hero-section .hero-overlay {
@@ -256,25 +255,24 @@ body {
     color: #C5A059;
     font-family: sans-serif;
     font-weight: 900;
-    letter-spacing: -2px;
+    letter-spacing: 6px;
     line-height: 1.1;
 }
 
 .hero-section .hero-content .hero-text {
-    margin-top: 20px;
     opacity: 1;
     font-size: 22px;
     font-weight: 300;
     letter-spacing: 1px;
-    margin-bottom: 40px;
     color: #f0f0f0;
+    line-height: 1.8;
+    margin: 20px auto;
 }
 
 .hero-section .hero-content button {
     width: 170px;
     height: 50px;
     border-radius: 5px;
-    margin-left: 5px;
     font-family: inherit;
     font-weight: 800;
     text-transform: uppercase;
@@ -282,6 +280,7 @@ body {
     cursor: pointer;
     font-size: 14px;
     transition: 0.5s;
+    margin: 10px;
 }
 
 .hero-section .hero-content button:hover {
@@ -299,6 +298,9 @@ body {
     background-color: transparent;
     color: #fff;
     border: 2px solid #fff;
+    /* background: transparent;
+    border: 1px solid #C5A059;
+    color: #C5A059; */
 }
 
 .hero-section .btn-secondary:hover {
@@ -340,48 +342,62 @@ body {
     transform: translateX(-50%);
 }
 
-.features-section .container {
+.features-section .features-container {
     width: 80%;
     height: 350px;
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.features-section .container .feature-card {
+.features-section .features-container .feature-card {
     float: left;
     width: 30%;
     height: 100%;
     text-align: center;
     padding: 30px 20px;
-    border: 2px solid #e0e0e0;
+    border: 1px solid #e5e5e5;
     background-color: #fdfdfd;
     border-radius: 8px;
     position: relative;
-    transition: 0.5s;
+    transition: 0.3s;
     z-index: 1;
 }
 
-.features-section .container .feature-card-center {
+.feature-title,
+.feature-text,
+.feature-icon,
+.feature-link {
+    transition: 0.3s;
+}
+
+.features-section .features-container .feature-card:hover {
+    transform: translateY(-8px);
+    border-color: #C5A059;
+}
+
+.features-section .features-container .feature-card-center {
     margin: 0 5%;
 }
 
-.features-section .container .feature-card .feature-icon {
+.features-section .features-container .feature-card .feature-icon {
     font-size: 60px;
     color: #C5A059;
     transition: 0.5s;
+    margin-bottom: 15px;
 }
 
-.features-section .container .feature-card .feature-title {
+.features-section .features-container .feature-card .feature-title {
     font-size: 28px;
     font-weight: 700;
     padding-top: 20px;
     color: #1a1a1a;
     transition: 0.5s;
+    margin-bottom: 20px;
 }
 
-.features-section .container .feature-card .feature-text {
+.features-section .features-container .feature-card .feature-text {
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
@@ -389,13 +405,13 @@ body {
     padding-top: 20px;
     color: #444;
     transition: 0.5s;
+    margin-bottom: 20px;
 }
 
-.features-section .container .feature-card .feature-link {
+.features-section .features-container .feature-card .feature-link {
     width: 200px;
     height: 40px;
     display: inline-block;
-    margin-top: 25px;
     font-size: 18px;
     color: #C5A059;
     font-weight: 700;
@@ -405,18 +421,18 @@ body {
     transition: 0.5s;
 }
 
-.features-section .container .feature-card:hover .feature-title,
-.features-section .container .feature-card:hover .feature-icon,
-.features-section .container .feature-card:hover .feature-link {
+.features-section .features-container .feature-card:hover .feature-title,
+.features-section .features-container .feature-card:hover .feature-icon,
+.features-section .features-container .feature-card:hover .feature-link {
     color: #fff;
 }
 
-.features-section .container .feature-card:hover .feature-text {
+.features-section .features-container .feature-card:hover .feature-text {
     color: #eee;
     opacity: 1;
 }
 
-.features-section .container .feature-card::after {
+.features-section .features-container .feature-card::after {
     content: "";
     position: absolute;
     height: 0;
@@ -424,22 +440,19 @@ body {
     top: 0;
     left: 0;
     background-color: #1a1a1a;
-    border-radius: 8px;
+    border-radius: 7px;
     opacity: 0;
     z-index: -1;
     transition: 0.6s;
 }
 
-.features-section .container .feature-card:hover::after {
+.features-section .features-container .feature-card:hover::after {
     height: 100%;
     width: 100%;
     opacity: 1;
 }
 
-.features-section .container .feature-card:hover {
-    transform: translateY(-15px);
-    border-color: #C5A059;
-}
+
 
 /* ============================products-section=============================*/
 .products-section {
@@ -661,7 +674,7 @@ body {
 
 .offer-section .offer-card .offer-description {
     padding-top: 10px;
-    font-size: 15px;
+    font-size: 19px;
     line-height: 1.5;
     opacity: 0.8;
     color: #555;
@@ -672,13 +685,42 @@ body {
     position: absolute;
     height: 0;
     width: 0;
-    top: 0;
-    left: 0;
     background-color: #C5A059;
     border-radius: 8px;
     opacity: 0;
     z-index: -1;
     transition: 0.5s;
+}
+.offer-section .offer-card-top-left::after {
+    top: 0;
+    left: 0;
+}
+
+.offer-section .offer-card-top-mid::after {
+    width: 100% !important;
+    height: 0;
+    top: 0;
+    left: 0;
+}
+
+.offer-section .offer-card-top-right::after {
+    top: 0;
+    right: 0;
+}
+
+.offer-section .offer-card-button-left::after {
+    bottom: 0;
+    left: 0;
+}
+
+.offer-section .offer-card-button-mid::after {
+    width: 100% !important;
+    bottom: 0;
+}
+
+.offer-section .offer-card-button-right::after {
+    bottom: 0;
+    right: 0;
 }
 
 .offer-section .container .offer-card:hover::after {
