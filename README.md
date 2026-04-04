@@ -66,7 +66,7 @@ The goal was to build a structured and visually appealing shopping experience us
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/b158314b-0841-4ac1-b814-0a2246875a1e" width="45%" />
-  <img src="https://github.com/user-attachments/assets/69e32cae-a78f-4aec-a05a-b3ed3d7fb5ed" width="45%" />
+  <img src="https://github.com/user-attachments/assets/1844062d-c260-4aad-9f5b-7f57fbff44f3" width="45%/>
 </p>
 
 <p align="center">
