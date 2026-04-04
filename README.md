@@ -54,8 +54,6 @@ The goal was to build a structured and visually appealing shopping experience us
 
 ## 📷 Preview
 
-## 📷 Preview
-
 <p align="center">
   <img src="https://github.com/user-attachments/assets/bd02e132-3588-4b09-964f-b159cea20cce" width="45%" />
   <img src="https://github.com/user-attachments/assets/a5c56671-69bf-4e73-b811-1380c9acccaf" width="45%" />
