@@ -54,12 +54,22 @@ The goal was to build a structured and visually appealing shopping experience us
 
 ## 📷 Preview
 
-<img width="1868" height="922" alt="image" src="https://github.com/user-attachments/assets/bd02e132-3588-4b09-964f-b159cea20cce" />
-<img width="1904" height="882" alt="image" src="https://github.com/user-attachments/assets/a5c56671-69bf-4e73-b811-1380c9acccaf" />
-<img width="1900" height="879" alt="image" src="https://github.com/user-attachments/assets/8edc33f5-c49c-47e3-ba88-bf27a4e88e8a" />
-<img width="1903" height="879" alt="image" src="https://github.com/user-attachments/assets/6133bfd6-c4f1-4f78-9262-7109e40389ed" />
-<img width="1903" height="881" alt="image" src="https://github.com/user-attachments/assets/b158314b-0841-4ac1-b814-0a2246875a1e" />
-<img width="1902" height="417" alt="image" src="https://github.com/user-attachments/assets/69e32cae-a78f-4aec-a05a-b3ed3d7fb5ed" />
+## 📷 Preview
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/bd02e132-3588-4b09-964f-b159cea20cce" width="45%" />
+  <img src="https://github.com/user-attachments/assets/a5c56671-69bf-4e73-b811-1380c9acccaf" width="45%" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8edc33f5-c49c-47e3-ba88-bf27a4e88e8a" width="45%" />
+  <img src="https://github.com/user-attachments/assets/6133bfd6-c4f1-4f78-9262-7109e40389ed" width="45%" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b158314b-0841-4ac1-b814-0a2246875a1e" width="45%" />
+  <img src="https://github.com/user-attachments/assets/69e32cae-a78f-4aec-a05a-b3ed3d7fb5ed" width="45%" />
+</p>
 
 
 ---
