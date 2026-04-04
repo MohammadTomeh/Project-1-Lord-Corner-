@@ -61,7 +61,6 @@ The goal was to build a structured and visually appealing shopping experience us
 ## 📬 Contact
 
 * LinkedIn: https://www.linkedin.com/in/YOUR-LINK  
-* Codeforces: https://codeforces.com/profile/YOUR-HANDLE  
 
 ---
 
